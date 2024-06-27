@@ -154,10 +154,6 @@
             <label for="alamat" class="block text-gray-700">Alamat</label>
             <input type="text" id="alamat" name="alamat" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
           </div>
-          <div class="mb-4">
-            <label for="tanggal_pemesanan" class="block text-gray-700">Tanggal Pemesanan</label>
-            <input type="date" id="tanggal_pemesanan" name="tanggal_pemesanan" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
-          </div>
           <div class="flex justify-end">
             <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Submit</button>
           </div>
@@ -170,11 +166,5 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../dist/js/script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var today = new Date().toISOString().split('T')[0];
-            document.getElementById('tanggal_pemesanan').value = today;
-          });
-    </script>
   </body>
 </html>
