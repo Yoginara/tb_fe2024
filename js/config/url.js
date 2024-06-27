@@ -1,0 +1,1 @@
+export let urlGetAyam = "https://be-tbku-134db5124bd2.herokuapp.com/ayam";
