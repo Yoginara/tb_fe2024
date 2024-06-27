@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="../dist/css/style.css" />
-    <link rel="stylesheet" href="../dist/css/dasboard.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="../img/logo.png" />
-    <title>Manuk Shop | Table | User</title>
+    <title>Manuk Shop | Insert | Order</title>
   </head>
   <body class="text-gray-800 font-inter">
     <!-- start: Sidebar -->
@@ -26,7 +25,7 @@
             <span class="text-sm">Home</span>
           </a>
         </li>
-        <!-- Table ayam dan user -->
+        <!-- Table ayam dan order -->
         <li class="mb-1 group">
           <a
             href="#"
@@ -38,10 +37,10 @@
           </a>
           <ul class="pl-7 mt-2 hidden group-[.selected]:block">
             <li class="mb-4">
-              <a href="ayam.html" class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Ayam</a>
+              <a href="../table/ayam.html" class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Ayam</a>
             </li>
             <li class="mb-4">
-              <a href="user.html" class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">User</a>
+              <a href="../table/order.html" class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Order</a>
             </li>
           </ul>
         </li>
@@ -51,18 +50,19 @@
             class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100 sidebar-dropdown-toggle"
           >
             <i class="ri-instance-line mr-3 text-lg"></i>
-            <span class="text-sm">Orders</span>
+            <span class="text-sm">Insert</span>
             <i class="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
           </a>
           <ul class="pl-7 mt-2 hidden group-[.selected]:block">
             <li class="mb-4">
-              <a href="../orders/ayam.html" class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Ayam</a>
+              <a href="ayam.html" class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Ayam</a>
             </li>
             <li class="mb-4">
-              <a href="#" class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">User</a>
+              <a href="#" class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Order</a>
             </li>
           </ul>
         </li>
+
         <li class="mb-1 group">
           <a
             href="#"
@@ -97,10 +97,10 @@
         </button>
         <ul class="flex items-center text-sm ml-4">
           <li class="mr-2">
-            <a href="#" class="text-gray-400 hover:text-gray-600 font-medium">Table</a>
+            <a href="#" class="text-gray-400 hover:text-gray-600 font-medium">Insert</a>
           </li>
           <li class="text-gray-600 mr-2 font-medium">/</li>
-          <li class="text-gray-600 mr-2 font-medium">User</li>
+          <li class="text-gray-600 mr-2 font-medium">Order</li>
         </ul>
         <ul class="ml-auto flex items-center">
           <li class="mr-1 dropdown">
@@ -128,62 +128,53 @@
           </li>
         </ul>
       </div>
-      <div class="p-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-          <div class="bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
-            <div class="flex justify-between mb-6">
-              <div>
-                <div class="text-2xl font-semibold mb-1">300</div>
-                <div class="text-sm font-medium text-gray-400">Custumer</div>
-              </div>
-            </div>
+      <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-6">Form Order</h2>
+        <form action="#" method="POST">
+          <div class="mb-4">
+            <label for="nama_pemesan" class="block text-gray-700">Jenis Ayam Laga</label>
+            <select id="jenis_kelamin_ayam" name="jenis_kelamin_ayam" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required>
+              <option value="" readonly>Pilih Jenis Ayam</option>
+              <option value="Ayam Burma">Ayam Burma</option>
+              <option value="Ayam Philipine">Ayam Philipine</option>
+              <option value="Ayam Siam">Ayam Siam</option>
+              <option value="Ayam Shamo">Ayam Shamo</option>
+              <option value="Ayam Saigon">Ayam Saigon</option>
+            </select>
           </div>
-          <div class="bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
-            <div class="flex justify-between mb-4">
-              <div>
-                <div class="flex items-center mb-1">
-                  <div class="text-2xl font-semibold">324</div>
-                  <div class="p-1 rounded bg-emerald-500/10 text-emerald-500 text-[12px] font-semibold leading-none ml-2">+30%</div>
-                </div>
-                <div class="text-sm font-medium text-gray-400">Keuntungan</div>
-              </div>
-            </div>
+          <div class="mb-4">
+            <label for="ayam" class="block text-gray-700">Ayam</label>
+            <input type="number" id="ayam" name="ayam" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
           </div>
-          <div class="bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
-            <div class="flex justify-between mb-6">
-              <div>
-                <div class="text-2xl font-semibold mb-1"><span class="text-base font-normal text-gray-400 align-top"></span>245</div>
-                <div class="text-sm font-medium text-gray-400">Pemesan</div>
-              </div>
-            </div>
+          <div class="mb-4">
+            <label for="pemesan" class="block text-gray-700">Nama Pemesan</label>
+            <input type="text" id="pemesan" name="pemesan" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
           </div>
-        </div>
-        <section class="table-section">
-          <div class="container">
-            <h1 class="table-title">Table User</h1>
-            <div class="table-wrapper">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 140px">User ID</th>
-                    <th style="width: 140px">Ayam</th>
-                    <th style="width: 140px">Nama Pemesan</th>
-                    <th style="width: 140px">Alamat</th>
-                    <th style="width: 140px">Tanggal Pemesanan</th>
-                    <th style="width: 140px">Action</th>
-                  </tr>
-                </thead>
-              </table>
-            </div>
+          <div class="mb-4">
+            <label for="alamat" class="block text-gray-700">Alamat</label>
+            <input type="text" id="alamat" name="alamat" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
           </div>
-        </section>
+          <div class="mb-4">
+            <label for="tanggal_pemesanan" class="block text-gray-700">Tanggal Pemesanan</label>
+            <input type="date" id="tanggal_pemesanan" name="tanggal_pemesanan" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
+          </div>
+          <div class="flex justify-end">
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Submit</button>
+          </div>
+        </form>
       </div>
     </main>
+
     <!-- end: Main -->
 
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../dist/js/script.js"></script>
-    <script src="../dist/js/dasboard.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var today = new Date().toISOString().split('T')[0];
+            document.getElementById('tanggal_pemesanan').value = today;
+          });
+    </script>
   </body>
 </html>
