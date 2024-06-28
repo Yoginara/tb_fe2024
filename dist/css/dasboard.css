@@ -339,3 +339,42 @@ body {
     color: var(--indigo-600);
 }
 /* end: Table */
+
+.edit-btn,
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-btn:hover {
+  color: #3b82f6; /* Tailwind blue-500 */
+}
+
+.delete-btn:hover {
+  color: #ef4444; /* Tailwind red-500 */
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.separator {
+  width: 1px;
+  height: 24px; /* Adjust height as needed */
+  background-color: #d1d5db; /* Tailwind gray-300 */
+  margin: 0 8px; /* Adjust spacing as needed */
+}
