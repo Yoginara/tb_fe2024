@@ -130,10 +130,9 @@
       </div>
       <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
         <h2 class="text-2xl font-bold mb-6">Form Ayam</h2>
-        <form action="#" method="POST">
           <div class="mb-4">
             <label for="jenis" class="block text-gray-700">Jenis Ayam Laga</label>
-            <select id="jenis" name="jenis" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required>
+            <select id="jenis" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required>
               <option value="" readonly>Pilih Jenis Ayam</option>
               <option value="Ayam Burma">Ayam Burma</option>
               <option value="Ayam Philipine">Ayam Philipine</option>
@@ -143,33 +142,32 @@
             </select>
           </div>
           <div class="mb-4">
-            <label for="umur_ayam" class="block text-gray-700">Umur Ayam</label>
-            <input type="number" id="umur" name="umur_ayam" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
+            <label for="umur" class="block text-gray-700">Umur Ayam</label>
+            <input type="number" id="umur" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
           </div>
           <div class="mb-4">
-            <label for="bobot" class="block text-gray-700">Bobot</label>
-            <input type="number" id="bobot" name="bobot" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
+            <label for="bobot" class="block text-gray-700">Bobot (kg)</label>
+            <input type="number" id="bobot" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
           </div>
           <div class="mb-4">
-            <label for="tinggi" class="block text-gray-700">Tinggi</label>
-            <input type="number" id="tinggi" name="tinggi" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
+            <label for="tinggi" class="block text-gray-700">Tinggi (cm)</label>
+            <input type="number" id="tinggi" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
           </div>
           <div class="mb-4">
-            <label for="jenis_kelamin_ayam" class="block text-gray-700">Jenis Kelamin Ayam</label>
-            <select id="jenis_kelamin" name="jenis_kelamin_ayam" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required>
+            <label for="jenis_kelamin" class="block text-gray-700">Jenis Kelamin Ayam</label>
+            <select id="jenis_kelamin" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required>
               <option value="" readonly>Pilih Jenis Kelamin Ayam</option>
               <option value="jantan">Jantan</option>
               <option value="betina">Betina</option>
             </select>
           </div>
           <div class="mb-4">
-            <label for="harga" class="block text-gray-700">Harga</label>
-            <input type="number" id="harga" name="harga" class="w-full px-3 py-2 border border-gray-400 rounded-lg"/>
+            <label for="harga" class="block text-gray-700">Harga (IDR)</label>
+            <input type="number" id="harga" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
           </div>
           <div class="flex justify-end">
-            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg" id="button">Submit</button>
+            <button id="button" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Submit</button>
           </div>
-        </form>
       </div>
     </main>
 
