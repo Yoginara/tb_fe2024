@@ -104,33 +104,29 @@
           <li class="text-gray-600 mr-2 font-medium">Edit Ayam</li>
         </ul>
       </div>
-      <div class="p-6">
-        <h1 class="text-2xl font-semibold mb-6">Edit Order</h1>
-        <form id="editForm" class="bg-white p-6 rounded-md shadow-md shadow-black/5">
+      <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-6">Edit Order</h2>
           <div class="mb-4">
-            <label for="orderId" class="block text-sm font-medium text-gray-700">Order ID</label>
-            <input type="text" id="orderId" name="orderId" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" readonly />
+            <label for="jenis" class="block text-gray-700">Jenis Ayam Laga</label>
+            <select id="jenis" name="jenis" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required>
+              <option value="" disabled selected>Pilih Jenis Ayam</option>
+              <!-- Option akan dimasukkan dari get_ayam.js -->
+            </select>
+          </div>
+          <div class="mb-4" id="ayam-detail">
           </div>
           <div class="mb-4">
-            <label for="ayam" class="block text-sm font-medium text-gray-700">Ayam</label>
-            <input type="text" id="ayam" name="ayam" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required />
+            <label for="pemesan" class="block text-gray-700">Nama Pemesan</label>
+            <input type="text" id="pemesan" name="pemesan" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
           </div>
           <div class="mb-4">
-            <label for="namapemesan" class="block text-sm font-medium text-gray-700">Nama Pemesan</label>
-            <input type="text" id="namapemesan" name="namapemesan" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required />
-          </div>
-          <div class="mb-4">
-            <label for="alamat" class="block text-sm font-medium text-gray-700">Alamat</label>
-            <input type="number" id="alamat" name="alamat" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required />
-          </div>
-          <div class="mb-4">
-            <label for="tanggal" class="block text-sm font-medium text-gray-700">Tanggal Pemesanan</label>
-            <input type="date" id="tanggal" name="tanggal" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required />
+            <label for="alamat" class="block text-gray-700">Alamat</label>
+            <input type="text" id="alamat" name="alamat" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
           </div>
           <div class="flex justify-end">
-            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Save</button>
+            <button id="button" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Submit</button>
           </div>
-        </form>
+      </div>
       </div>
     </main>
     <!-- end: Main -->
@@ -140,5 +136,8 @@
     <script src="../dist/js/script.js"></script>
     <script src="../dist/js/edit.js"></script>
     <script src="../dist/js/dasboard.js"></script>
+    <script type="module" src="../js/fetch_edit_order.js"></script>
+    <script type="module" src="../js/controller/put_order.js"></script>
+    <script type="module" src="../js/controller/get_ayam.js"></script>
   </body>
 </html>

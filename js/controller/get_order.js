@@ -15,7 +15,8 @@ function isiRow(value) {
                 .replace("#AYAM#", value.ayam.jenis)
                 .replace("#NAMA#", value.nama_pemesan)
                 .replace("#ALAMAT#", value.alamat)
-                .replace("#TANGGAL#", formattedDate);
-
+                .replace("#TANGGAL#", formattedDate)
+                .replace("#IDEDIT#", value._id)
+                .replace("#IDHAPUS#", value._id);
     addInner("iniTabel", content);
 }
