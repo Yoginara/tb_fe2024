@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../dist/css/style.css" />
+    <link rel="stylesheet" href="../dist/css/dasboard.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/logo.png" />
+    <script type="module" src="../js/edit.js"></script>
+    <title>Edit Ayam | Manuk Shop</title>
+  </head>
+  <body class="text-gray-800 font-inter">
+    <!-- start: Sidebar -->
+    <div class="fixed left-0 top-0 w-64 h-full bg-gray-900 p-4 z-50 sidebar-menu transition-transform">
+      <a href="#" class="flex items-center pb-4 border-b border-b-gray-800">
+        <img src="../img/logo.png" alt="" class="w-8 h-8 rounded object-cover" />
+        <span class="text-lg font-bold text-white ml-3">Manuk Shop</span>
+      </a>
+      <ul class="mt-4">
+        <li class="mb-1 group">
+          <a
+            href="../index.html"
+            class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100"
+          >
+            <i class="ri-home-2-line mr-3 text-lg"></i>
+            <span class="text-sm">Home</span>
+          </a>
+        </li>
+        <!-- Table ayam dan Order -->
+        <li class="mb-1 group">
+          <a
+            href="#"
+            class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100 sidebar-dropdown-toggle"
+          >
+            <i class="ri-stack-line mr-3 text-lg"></i>
+            <span class="text-sm">Edit</span>
+            <i class="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
+          </a>
+          <ul class="pl-7 mt-2 hidden group-[.selected]:block">
+            <li class="mb-4">
+              <a href="ayam.html" class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Ayam</a>
+            </li>
+            <li class="mb-4">
+              <a href="order.html" class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Order</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mb-1 group">
+          <a
+            href="#"
+            class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100 sidebar-dropdown-toggle"
+          >
+            <i class="ri-instance-line mr-3 text-lg"></i>
+            <span class="text-sm">Insert </span>
+            <i class="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
+          </a>
+          <ul class="pl-7 mt-2 hidden group-[.selected]:block">
+            <li class="mb-4">
+              <a href="../insert/ayam.html" class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Ayam</a>
+            </li>
+            <li class="mb-4">
+              <a href="../insert/order.html" class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Order</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mb-1 group">
+          <a
+            href="#"
+            class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100 sidebar-dropdown-toggle"
+          >
+            <i class="ri-flashlight-line mr-3 text-lg"></i>
+            <span class="text-sm">Services</span>
+            <i class="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
+          </a>
+          <ul class="pl-7 mt-2 hidden group-[.selected]:block">
+            <li class="mb-4">
+              <a href="#" class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Manage services</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mb-1 group">
+          <a href="#" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+            <i class="ri-settings-2-line mr-3 text-lg"></i>
+            <span class="text-sm">Settings</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="fixed top-0 left-0 w-full h-full bg-black/50 z-40 md:hidden sidebar-overlay"></div>
+    <!-- end: Sidebar -->
+
+    <!-- start: Main -->
+    <main class="w-full md:w-[calc(100%-256px)] md:ml-64 bg-gray-50 min-h-screen transition-all main">
+      <div class="py-2 px-6 bg-white flex items-center shadow-md shadow-black/5 sticky top-0 left-0 z-30">
+        <button type="button" class="text-lg text-gray-600 sidebar-toggle">
+          <i class="ri-menu-line"></i>
+        </button>
+        <ul class="flex items-center text-sm ml-4">
+          <li class="mr-2">
+            <a href="#" class="text-gray-400 hover:text-gray-600 font-medium">Table</a>
+          </li>
+          <li class="text-gray-600 mr-2 font-medium">/</li>
+          <li class="text-gray-600 mr-2 font-medium">Edit Ayam</li>
+        </ul>
+      </div>
+      <div class="p-6">
+        <h1 class="text-2xl font-semibold mb-6">Edit Order</h1>
+        <form id="editForm" class="bg-white p-6 rounded-md shadow-md shadow-black/5">
+          <div class="mb-4">
+            <label for="orderId" class="block text-sm font-medium text-gray-700">Order ID</label>
+            <input type="text" id="orderId" name="orderId" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" readonly />
+          </div>
+          <div class="mb-4">
+            <label for="ayam" class="block text-sm font-medium text-gray-700">Ayam</label>
+            <input type="text" id="ayam" name="ayam" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required />
+          </div>
+          <div class="mb-4">
+            <label for="namapemesan" class="block text-sm font-medium text-gray-700">Nama Pemesan</label>
+            <input type="text" id="namapemesan" name="namapemesan" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required />
+          </div>
+          <div class="mb-4">
+            <label for="alamat" class="block text-sm font-medium text-gray-700">Alamat</label>
+            <input type="number" id="alamat" name="alamat" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required />
+          </div>
+          <div class="mb-4">
+            <label for="tanggal" class="block text-sm font-medium text-gray-700">Tanggal Pemesanan</label>
+            <input type="date" id="tanggal" name="tanggal" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required />
+          </div>
+          <div class="flex justify-end">
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Save</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- end: Main -->
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../dist/js/script.js"></script>
+    <script src="../dist/js/edit.js"></script>
+    <script src="../dist/js/dasboard.js"></script>
+  </body>
+</html>

@@ -11,6 +11,8 @@ function isiRow(value) {
             .replace("#BOBOT#", value.bobot)
             .replace("#TINGGI#", value.tinggi)
             .replace("#KELAMIN#", value.jenis_kelamin)
-            .replace("#HARGA#", value.harga);
+            .replace("#HARGA#", value.harga)
+            .replace("#IDEDIT#", value._id)
+            .replace("#IDHAPUS#", value._id);
     addInner("iniTabel", content);
 }
