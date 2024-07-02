@@ -108,12 +108,10 @@
               <i class="ri-search-line"></i>
             </button>
             <div class="dropdown-menu shadow-md shadow-black/5 z-30 hidden max-w-xs w-full bg-white rounded-md border border-gray-100">
-              <form action="" class="p-4 border-b border-b-gray-100">
                 <div class="relative w-full">
                   <input type="text" class="py-2 pr-4 pl-10 bg-gray-50 w-full outline-none border border-gray-100 rounded-md text-sm focus:border-blue-500" placeholder="Search..." />
                   <i class="ri-search-line absolute top-1/2 left-4 -translate-y-1/2 text-gray-400"></i>
                 </div>
-              </form>
             </div>
           </li>
           <li class="dropdown">
@@ -130,21 +128,14 @@
       </div>
       <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
         <h2 class="text-2xl font-bold mb-6">Form Order</h2>
-        <form action="#" method="POST">
           <div class="mb-4">
-            <label for="nama_pemesan" class="block text-gray-700">Jenis Ayam Laga</label>
-            <select id="jenis_kelamin_ayam" name="jenis_kelamin_ayam" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required>
-              <option value="" readonly>Pilih Jenis Ayam</option>
-              <option value="Ayam Burma">Ayam Burma</option>
-              <option value="Ayam Philipine">Ayam Philipine</option>
-              <option value="Ayam Siam">Ayam Siam</option>
-              <option value="Ayam Shamo">Ayam Shamo</option>
-              <option value="Ayam Saigon">Ayam Saigon</option>
+            <label for="jenis" class="block text-gray-700">Jenis Ayam Laga</label>
+            <select id="jenis" name="jenis" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required>
+              <option value="" disabled selected>Pilih Jenis Ayam</option>
+              <!-- Option akan dimasukkan dari get_ayam.js -->
             </select>
           </div>
-          <div class="mb-4">
-            <label for="ayam" class="block text-gray-700">Ayam</label>
-            <input type="number" id="ayam" name="ayam" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
+          <div class="mb-4" id="ayam-detail">
           </div>
           <div class="mb-4">
             <label for="pemesan" class="block text-gray-700">Nama Pemesan</label>
@@ -155,9 +146,8 @@
             <input type="text" id="alamat" name="alamat" class="w-full px-3 py-2 border border-gray-400 rounded-lg" required />
           </div>
           <div class="flex justify-end">
-            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Submit</button>
+            <button id="button" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Submit</button>
           </div>
-        </form>
       </div>
     </main>
 
@@ -166,5 +156,7 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../dist/js/script.js"></script>
+    <script type="module" src="../js/controller/get_ayam.js"></script>
+    <script type="module" src="../js/controller/order.js"></script>
   </body>
 </html>
