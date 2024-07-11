@@ -6,11 +6,11 @@ import { AmbilResponse} from "../config/response.js";
 function pushData(){
     let data = {
         jenis: getValue("jenis"),
-        umur: getValue("umur"),
-        bobot: getValue("bobot"),
-        tinggi: getValue("tinggi"),
+        umur: parseInt(getValue("umur")),
+        bobot: parseInt(getValue("bobot")),
+        tinggi: parseInt(getValue("tinggi")),
         jenis_kelamin: getValue("jenis_kelamin"),
-        harga: getValue("harga"),
+        harga: parseInt(getValue("harga")),
     };
 
     // Validate if required fields are filled correctly
